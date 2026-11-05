@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CALCULATOR!!!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="announcement">⚠️ THE CALCULATOR ZONE ⚠️ &nbsp; BEST VIEWED WITH YOUR EYEBALLS OPEN</header>
+  <main class="page">
+    <aside class="side-note">MATH<br>HAPPENS<br>HERE!!!<br><span>↓↓↓↓</span></aside>
+    <section class="calculator" aria-label="Calculator">
+      <h1>CALC<br><em>ULATOR</em></h1>
+      <p class="tiny-help">click buttons or type on keyboard!!</p>
+      <div class="screen-wrap">
+        <div id="previous" class="previous" aria-live="polite"></div>
+        <output id="display" class="display" aria-live="polite" aria-atomic="true">0</output>
+      </div>
+      <div class="buttons" id="buttons">
+        <button class="clear" data-action="clear">CLEAR ALL</button>
+        <button class="utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="operator" data-operator="÷">÷</button>
+        <button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button><button class="operator" data-operator="×">×</button>
+        <button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button><button class="operator" data-operator="−">−</button>
+        <button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button><button class="operator" data-operator="+">+</button>
+        <button class="zero" data-digit="0">ZERO BUTTON</button><button data-action="decimal">.</button><button class="equals" data-action="equals">= GO!!</button>
+      </div>
+      <p id="message" class="message" role="status">Ready-ish. Do some math.</p>
+    </section>
+    <aside class="side-note right">100%<br>ACCURATE*<br><span>*hopefully</span></aside>
+  </main>
+  <footer>CALCULATOR WORLD INTERNATIONAL • NO REFUNDS • PRESS ESC TO CLEAR</footer>
+</body>
+</html>
